@@ -35,6 +35,7 @@
     NSArray *inputArray = @[@[@3,@2,@1],@[@4,@6,@5],@[@9,@7,@8]];
     NSArray *resultArray = @[@1,@2,@3,@4,@5,@6,@7,@8,@9];
     BOOL flag = [[self.sorter twoDimensionalSort: inputArray] isEqualToArray:resultArray];
+    NSLog(@"%@", [self.sorter twoDimensionalSort: inputArray]);
     XCTAssertTrue(flag);
 }
 
@@ -42,6 +43,7 @@
     NSArray *inputArray = @[@[@"Ivan",@"Ben",@"Dmitrii"], @[@"Billy",@"Cris"], @[@"Valentin",@"Van"], @[@"Alex",@"Kony"]];
     NSArray *restultArray = @[@"Alex",@"Ben",@"Billy",@"Cris",@"Dmitrii",@"Ivan",@"Kony",@"Valentin",@"Van"];
     BOOL flag = [[self.sorter twoDimensionalSort: inputArray] isEqualToArray: restultArray];
+    NSLog(@"%@", [self.sorter twoDimensionalSort: inputArray]);
     XCTAssertTrue(flag);
 }
 
